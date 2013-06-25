@@ -178,6 +178,9 @@ $(document).ready(function(){
                 p.height = $el.attr('data-bootstro-height');
                 style = style + 'height:' + $el.attr('data-bootstro-height') + ';'
             }
+            if ($el.attr('data-bootstro-container')) {
+                p.container = $el.attr('data-bootstro-container');
+            }
             p.trigger = 'manual'; //always set to manual.
            
             p.html = $el.attr('data-bootstro-html') || 'top';
